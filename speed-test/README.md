@@ -25,3 +25,41 @@ You'll be passing in 3 values:
 ```bash
 go run . 5 3 3
 ```
+
+### Examples:
+
+```bash
+charlie-map@me speed-test % go run . 1 3 2
+Building 1 tests... 3x2
+Ready?
++---+---+---+
+| 6 | 1 | 2 |
++---+---+---+
+| 5 |   | 3 |
++---+---+---+
+Answer: 4
+Well done! Your average response time was 867.139333ms ms
+```
+
+You can do any shape as well, so if you want to practice your columns or rows:
+
+```bash
+charlie-map@me speed-test % go run . 1 1 6
+Building 1 tests... 1x6
+Ready?
++---+
+| 1 |
++---+
+| 6 |
++---+
+| 3 |
++---+
+| 5 |
++---+
+| 2 |
++---+
+|   |
++---+
+Answer: 4
+Well done! Your average response time was 1.91164975s ms
+```
